@@ -40,7 +40,7 @@ function desencriptar(){
         document.getElementById("texto").value = textocifrado;
         titulomensaje.textContent = "Texto desencriptado con exito";
         parrafo.textContent = "";
-        muñeco.src = "./img/desencriptado.jfif";
+        muñeco.src = "./img/desencriptado.png";
     } else {
         muñeco.src = "./img/muñeco.png";
         titulomensaje.textContent = "Ningun mensaje encontrado";
