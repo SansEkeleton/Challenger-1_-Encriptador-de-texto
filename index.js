@@ -53,5 +53,5 @@ function copiar(){
     let texto = document.getElementById("texto");
     texto.select();
     document.execCommand("copy");
-    alert("Texto copiado");
+    
 }
