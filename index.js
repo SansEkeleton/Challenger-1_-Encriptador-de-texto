@@ -22,3 +22,29 @@ function encriptar(){
     parrafo.textContent = "Ingresa el texto que desees encriptar o desencriptar";
     alert("No has ingresado ningun texto");}
 }
+
+function desencriptar(){
+    let texto = document.getElementById("texto").value;
+    let titulomensaje = document.getElementById("titulo-mensaje");
+    parrafo = document.getElementById("parrafo");
+    let muñeco = document.getElementById("muñeco");
+
+    textocifrado = texto
+    .replace(/enter/gi, "e")
+    .replace(/imes/gi, "i")
+    .replace(/ai/gi, "a")
+    .replace(/ober/gi, "o")
+    .replace(/ufat/gi, "u");
+
+    if (texto.length != 0){
+        document.getElementById("texto").value = textocifrado;
+        titulomensaje.textContent = "Texto desencriptado con exito";
+        parrafo.textContent = "";
+        muñeco.src = "./img/desencriptado.jfif";
+    } else {
+        muñeco.src = "./img/muñeco.png";
+        titulomensaje.textContent = "Ningun mensaje encontrado";
+        parrafo.textContent = "Ingresa el texto que desees encriptar o desencriptar";
+        alert("No has ingresado ningun texto");
+    }
+}
