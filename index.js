@@ -48,3 +48,10 @@ function desencriptar(){
         alert("No has ingresado ningun texto");
     }
 }
+
+function copiar(){
+    let texto = document.getElementById("texto");
+    texto.select();
+    document.execCommand("copy");
+    alert("Texto copiado");
+}
